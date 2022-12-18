@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Add from "./components/Add";
+import Middle from "./components/Middle";
+import Remove from "./components/Remove";
+import Replace from "./components/Replace";
+
+
+
+
+
+
+
+
 
 function App() {
+  let array = [1,2,3,4,5];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1 className="m_tc">REST AND SPREAD OPERATOR</h1>
+    <p id="m_startarray" className="m_tc m_startarray"> Array Element  : {array} </p>
+      <Add />
+      <Middle />
+      <Remove />
+      <Replace /> 
     </div>
   );
 }
